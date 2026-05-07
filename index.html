@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwa & Safaa | Two Beautiful Souls</title>
+    <meta name="description" content="A cinematic storytelling experience of two sisters, Marwa and Safaa. A journey of love, memories, and sisterhood.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body class="dark-theme">
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <!-- Password Protection -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-card">
+            <div class="password-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h2>Private Story</h2>
+            <p>Please enter the secret password to unlock the magic of Marwa & Safaa.</p>
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter Password...">
+                <button id="password-submit">Unlock <i class="fas fa-key"></i></button>
+            </div>
+            <p id="password-error" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="heart-loader"></div>
+            <p>Gathering Memories...</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="reveal-text">Two Sisters, Two Beautiful Souls</h1>
+            <p class="subtitle fade-in">A cinematic journey of love, laughter, and an unbreakable bond between Marwa and Safaa.</p>
+            <a href="#marwa" class="btn-heart">
+                <span>Explore Their Story</span>
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+        <div class="floating-icons">
+            <i class="fas fa-heart icon-1"></i>
+            <i class="fas fa-star icon-2"></i>
+            <i class="fas fa-heart icon-3"></i>
+        </div>
+    </header>
+
+    <!-- Love Game Section -->
+    <section class="game-section" id="game" style="padding: 100px 0; text-align: center;">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="section-title">The Bond of Love</h2>
+            <p class="emotional-text" style="margin: 0 auto 30px;">Prove your sisterly bond. Click the heart to fill it with infinite love!</p>
+            
+            <div class="love-game-container" style="margin: 0 auto;">
+                <div class="bond-meter-wrapper">
+                    <div class="game-heart-empty" id="click-heart">
+                        <div class="game-heart-fill" id="heart-fill"></div>
+                    </div>
+                    <div class="bond-percentage"><span id="bond-score">0</span>%</div>
+                </div>
+                <div id="game-success-message" class="hidden">
+                    <h3>Bond Unbreakable! 💖</h3>
+                    <p>True sisterhood lasts forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marwa Section -->
+    <section class="story-section" id="marwa">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text" data-aos="fade-right">
+                    <h2 class="section-title"><span class="reveal-text">The Grace of Marwa</span></h2>
+                    <p class="emotional-text stagger-1">Marwa is like a gentle breeze on a summer afternoon—calm, refreshing, and full of life. Her laughter is a melody that echoes through the halls of our home, and her kindness is a light that never fades. She carries an elegance that is rare and a heart that is infinitely generous.</p>
+                    <div class="quote-box stagger-2">
+                        <p>"In the garden of life, Marwa is the most radiant bloom."</p>
+                    </div>
+                </div>
+                <div class="story-gallery image-reveal" data-aos="zoom-in">
+                    <div class="gallery-container">
+                        <div class="gallery-wrapper" id="marwa-gallery">
+                            <!-- Photos from images1 will be here -->
+                            <div class="gallery-item active"><img src="images1/WhatsApp Image 2026-05-07 at 02.34.04 (1).jpeg" alt="Marwa"></div>
+                            <div class="gallery-item"><img src="images1/WhatsApp Image 2026-05-07 at 02.34.04.jpeg" alt="Marwa"></div>
+                            <div class="gallery-item"><img src="images1/WhatsApp Image 2026-05-07 at 02.34.13 (1).jpeg" alt="Marwa"></div>
+                            <div class="gallery-item"><img src="images1/WhatsApp Image 2026-05-07 at 02.34.13.jpeg" alt="Marwa"></div>
+                        </div>
+                        <div class="gallery-nav">
+                            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safaa Section -->
+    <section class="story-section reverse" id="safaa">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-gallery image-reveal" data-aos="zoom-in">
+                    <div class="gallery-container">
+                        <div class="gallery-wrapper" id="safaa-gallery">
+                            <!-- Photos from images2 will be here -->
+                            <div class="gallery-item active"><img src="images2/WhatsApp Image 2026-05-07 at 02.37.46 (1).jpeg" alt="Safaa"></div>
+                            <div class="gallery-item"><img src="images2/WhatsApp Image 2026-05-07 at 02.37.46 (2).jpeg" alt="Safaa"></div>
+                            <div class="gallery-item"><img src="images2/WhatsApp Image 2026-05-07 at 02.37.46 (3).jpeg" alt="Safaa"></div>
+                            <div class="gallery-item"><img src="images2/WhatsApp Image 2026-05-07 at 02.37.46.jpeg" alt="Safaa"></div>
+                        </div>
+                        <div class="gallery-nav">
+                            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-text" data-aos="fade-left">
+                    <h2 class="section-title"><span class="reveal-text">The Sparkle of Safaa</span></h2>
+                    <p class="emotional-text stagger-1">Safaa is the sun that breaks through every cloud. Her spirit is vibrant, her energy infectious, and her soul is pure magic. To know Safaa is to know joy in its truest form. She turns ordinary moments into cinematic memories, painting the world with her unique colors and boundless love.</p>
+                    <div class="quote-box stagger-2">
+                        <p>"Safaa doesn't just walk through life; she dances through it with grace."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title text-center">Our Beautiful Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item left stagger-1" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <span class="icon"><i class="fas fa-star"></i></span>
+                        <h3>The Beginning</h3>
+                        <p>Two stars were born to light up our world, bringing a new meaning to sisterhood and unconditional love.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right stagger-2" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <span class="icon"><i class="fas fa-heart"></i></span>
+                        <h3>First Laughter</h3>
+                        <p>Shared secrets and whispered dreams, building a bond that time could never break.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left stagger-3" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <span class="icon"><i class="fas fa-camera"></i></span>
+                        <h3>Captured Moments</h3>
+                        <p>Every photo tells a story of an adventure, a hug, or a quiet moment of understanding.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right stagger-4" data-aos="fade-up">
+                    <div class="timeline-content">
+                        <span class="icon"><i class="fas fa-infinity"></i></span>
+                        <h3>Always Together</h3>
+                        <p>No matter where life takes them, their souls remain intertwined in a dance of eternal friendship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <div id="typing-quote" class="typing-text"></div>
+            <div class="quote-icon text-right"><i class="fas fa-quote-right"></i></div>
+        </div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- Final Section -->
+    <footer class="final-section">
+        <div class="container">
+            <div class="final-content" data-aos="zoom-out">
+                <h2>An Eternal Bond</h2>
+                <p>Marwa and Safaa aren't just sisters; they are the heartbeats of a beautiful story.</p>
+                <div class="ending-animation">
+                    <div class="glowing-heart" style="margin: 50px auto;"></div>
+                </div>
+                <p class="footer-note">Created by moughite</p>
+            </div>
+        </div>
+    </footer>
+
+    <canvas id="canvas-particles"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
